@@ -2,9 +2,9 @@
 
 1. Install packages.
    ```
-   npm install
+   pnpm install
    ```
 2. Run website.
    ```
-   npm run dev
+   pnpm dev
    ```
