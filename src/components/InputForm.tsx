@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from '../styles/InputForm.module.scss'
 
-function InputForm(props, ref) {
+type Props = {
+  callbackFn: (e: any) => void;
+}
+
+function InputForm(props: Props, ref) {
 
   return (
     <div className={styles.answerForm}>
@@ -10,4 +14,4 @@ function InputForm(props, ref) {
   )
 }
 
-export default React.forwardRef(((props, ref) => InputForm(props, ref)))
+export default React.forwardRef(((props: Props, ref) => InputForm(props, ref)))
