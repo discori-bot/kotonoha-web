@@ -1,0 +1,14 @@
+.darkModeToggleButton {
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    fill: var(--foreground);
+    border: none;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+  

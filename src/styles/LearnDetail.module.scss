@@ -1,0 +1,49 @@
+.flexContainer {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 45px;
+  background-color: lightgray;
+  flex-direction: column;
+}
+
+.romanised {
+    font-family: var(--ff-title);
+    margin: auto;
+    text-align: center;
+    line-height: 1;
+    padding: 1em;
+  }
+
+.partOfSpeech {
+    font-family: var(--ff-title);
+    margin: auto;
+    text-align: center;
+    line-height: 1;
+    padding: 1em;
+  }
+
+.translation {
+    font-family: var(--ff-title);
+    margin: auto;
+    text-align: center;
+    line-height: 1;
+    padding: 1em;
+  }
+
+.frequencyRank {
+    font-family: var(--ff-title);
+    margin: auto;
+    text-align: center;
+    line-height: 1;
+    padding: 1em;
+  }
+
+.wiktionaryLink {
+    font-family: var(--ff-title);
+    margin: auto;
+    text-align: center;
+    line-height: 1;
+    padding: 1em;
+  }
+
+  

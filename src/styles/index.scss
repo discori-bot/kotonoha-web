@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display:900");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-light: #f1f1f1;
+  --clr-dark: #262626;
+  --clr-primary: var(--clr-light);
+  --clr-accent: #e6e4e4;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
+  --ff-title: "Playfair Display", serif;
+  --ff-body: "Assistant", sans-serif;
+}
+
+.darkmode {
+  --clr-light: #f1f1f1;
+  --clr-dark: #262626;
+  --clr-primary: var(--clr-dark);
+  --clr-accent: #353535;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--ff-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: calc(3rem + 7vw);
+  font-family: var(--ff-title);
+  margin: auto;
+  text-align: center;
+  line-height: 1;
+  padding: 1em;
+}
+
+h2 {
+  font-size: calc(2rem + 5vw);
+  font-family: var(--ff-title);
+  margin: auto;
+  text-align: center;
+  line-height: 1; 
+  padding: 1em;
+}
+
+.subtitle {
+  font-size: 20px;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+}
+
+.btn-group {
+  margin: auto;
+  display: relative;
+  padding: 1.25em;
+}
+
+.btn {
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  font-size: 20px;
+  padding: 1em 2em;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 1;
+
+}
+
+.btn + .btn {
+  margin-left: 1em;
+}
+
+.btn-secondary {
+  background: var(--foreground);
+  color: var(--background);
+  // border: currentColor solid 2px;
+}
+
+.btn-accent {
+  background: var(--clr-accent);
+  color: var(--foreground);
+}
+
+.btn-answer {
+  background: var(--clr-accent);
+  color: var(--foreground);
+  width: 150px;
+}
+
+.intro {
+  height: 80vh;
+  padding: 10em 0;
+  display: grid;
+  grid-template-columns: minmax(2em, 1fr) minmax(80vw, 860px) minmax(2em, 1fr);
+  background: var(--clr-primary);
+  align-content: center;
+}
+
+.intro > * {
+  grid-column: 2 / 3;
+}
